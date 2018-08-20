@@ -3,70 +3,188 @@
 
 
 <head>
+  <!--links that are relavent-->
   <link rel="stylesheet" href="style.css">
-	<title>Maribel Cardiel</title>
-</head>
-  <body>
-    <div class="top-page" id="top-page">
-  		<h1><br><br><br>Maribel Cardiel</h1>
-  	</div>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  	<div class="rectangle1"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>var ml = { timelines: {}};</script>
+
+  <title>Maribel Cardiel</title>
+</head>
+
+<body>
+	    <!--Menu Bar at the side of the page-->
+	<div class="vertical_menu">
+  	    <a href="#Home">Home</a>
+  		<a href="#About-Me">About Me</a>
+  		<a href="#Resume">Resume</a>
+  		<a href="#Projects">Projects</a>
+  		<a href="#Contact-Me">Contact Me</a>
+	</div>
+    <div class="Home" id="Home">
+      <!-- moving letters for my Name-->
+  	  <h1 class="ml1">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters">Maribel Cardiel</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+
+      <script>
+      $('.ml1 .letters').each(function(){
+      $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+      });
+      ml.timelines["ml1"] = anime.timeline({loop: true})
+      .add({
+      targets: '.ml1 .letter',
+      scale: [0.3,1],
+      opacity: [0,1],
+      translateZ: 0,
+      easing: "easeOutExpo",
+      duration: 600,
+      delay: function(el, i) {
+      return 70 * (i+1)
+      }
+      }).add({
+      targets: '.ml1 .line',
+      scaleX: [0,1],
+      opacity: [0.5,1],
+      easing: "easeOutExpo",
+      duration: 700,
+      offset: '-=875',
+      delay: function(el, i, l) {
+      return 80 * (l - i);
+      }
+      }).add({
+      targets: '.ml1',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+      });
+      </script>
+  	</div>
+    <!--rectangle to seperate my main picture from the other infromation-->
+    <div class="rectangle_1"></div>
+  	<!-- line above About-Me-->
   	<div class="vertical_line_1"></div>
+	
+	<div class="About-Me" id='About-Me'>
+  		
+      <h2>About Me</h2>
+
+      <!--slide show showing pictures about me-->
+  	  <div class="w3-content w3-display-container">
+      
+        <img class="mySlides w3-animate-fading" src="IMG_1156.JPG" >
+        <img class="mySlides w3-animate-fading" src="IMG_3023.JPG" >
+        <img class="mySlides w3-animate-fading" src="G0044924.JPG" >
+        <img class="mySlides w3-animate-fading" src="IMG_3051.jpg">
+        <img class="mySlides w3-animate-fading" src="IMG_3260.jpg">
+        <!--the small buttons at the bottom of the slide show-->
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:560px"  >
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>             
+        </div>
+      </div>
+
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+      showDivs(slideIndex += n);
+      }
+
+      function currentDiv(n) {
+      showDivs(slideIndex = n);
+      }
+
+      function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-white";
+      }
+      </script>
+
+
+	  <p class="About-Me-Description">
+	    <br>
+		Maribel is a junior at Stanford University majoring in Computer Science with a minor in Education. She was raised in Albuquerque, New Mexico, where she discovered her passion for engineering. She sought out every opportunity that would allow her to explore different STEM fields. She completed four different internships at the University of New Mexico with concentrations in Chemical Engineering, Electrical Engineering, and Computer Science. She continues to impress by teaching people how to code, interning at a national lab, and successfully completing her class courses.
+		<br>
+		She is also very passionate about community service. She has completed hundreds of hours in community service including mentoring students, tutoring, helping her under-resourced high school provide more opportunities to students, and staying actively engaged in the Latinx community on Stanford's campus.
+		<br>
+		On her free time, she spends a lot of time teaching and dancing Salsa and Bachata as part of Salseros de Stanford, attending musical productions, and riding horses. 
+		<br>
+		Her yearning to learn and help others is astounding. She will have such a bright future.
+
+	  </p>
+    </div>
+    <!-- line above Resume-->
   	<div class="vertical_line_2"></div>
-  	<div class="vertical_line_3"></div>
-  	<div class="vertical_line_4"></div>
-  	<div class="vertical_line_5"></div>
-    <div class= "Resume1" id="Resume1">
+   
+
+    <div class= "Resume" id="Resume">
     	<h2>Resume</h2>
-    	
+    	<!--link to my resume-->
 		<a href="Maribel_Cardiel_resume_7_15.pdf" class="resumeButton">View Resume</a>
 		
 	</div>
+    <!-- line above Projects-->
+  	<div class="vertical_line_3"></div>
+
 	<div class="Projects" id="Projects">
-		<h2>Projects</h2>
-		<p> In high school, Maribel noticed a lack of opportunity for more advanced education opportunities in her community. As a high achieving student, herself, she found ways to go above and beyond by taking additional college classes, internships, etc. However, she still wanted others have more readily available opportunties. So she conducted over 20 interviews to obtain
+	  <h2>Projects</h2>
+		<p class="Projects-Description"> In high school, Maribel noticed a lack of opportunity for more advanced education opportunities in her community. As a high achieving student, herself, she found ways to go above and beyond by taking additional college classes, internships, etc. However, she still wanted others to have more readily available opportunities. So she conducted over 20 interviews to obtain a better understanding of what AP/Honors teachers have to complete in order to ensure the success of their classes, students that have been exposed to more advanced opportunities to hear about the challenges and benefits of taking more advanced courses were, and student advocates to learn about the best ways to help support students that are looking for more opportunities. She took over three school wide surveys to see if there was student demand for AP classes. She wrote and presented a proposal for the introduction of three new AP classes at the school the following year. They were all aproved. She now continuously returns to campus to provide feedback, check up on the progress of the classes and encourage highly motiviated students to pursue a degree at competitive universities and seek out life changing opportunities.
+		<br><br>
+		As Vice President of Hermanos de Stanford, a latinx service group at Stanford University, Maribel attempted to change the culture of the group that was very heirarical to be more inclusive to new members. She established a new program called Hermanitos that would allow incoming members to get to meet older members, engage in fun activities, and participate in community service. There were over 30 matches made between new and old members and they continue to interact with each other and provide support throughout their four years in college.
+		<br><br>
+		She has recently joined a group called Human Engineers that works on fabricating prostheses for patients with amputies. She will then go to the Phillipines to fit and teach nurses how to fit prostheses for patients who are unable to obtain sufficient medical care.
+	  </p>
 	</div>
+    <!--line above Contact-Me-->
+  	<div class="vertical_line_4"></div>
+
 	<div class= "Contact-Me" id="Contact-Me">
-		<h2>Contact Me</h2>
-		<h4>Phone: (505) 452-7287</h4>
-		<h4>Email: mcardiel@stanford.edu  &emsp;   maribel1cardiel@gmail.com</h4>
+	  <h2>Contact Me</h2>
+	  <h4 class="Contact-Info">Phone: (505) 452-7287</h4>
+	  <h4 class="Contact-Info">Email: mcardiel@stanford.edu  &emsp;   maribel1cardiel@gmail.com</h4>
 	</div>
-	  	<div class="about-me" id='about-me'>
-  		<h2>About Me</h2>
-		<img src="IMG_1156.JPG" height=300 width="auto" class="lsp">
-    	<img src="IMG_2821.jpg" height="auto" width="400" class= "rock">
-        <img src="IMG_3023.JPG" height=585 width="auto" class="centro" >
-       	<img src="G0044924.JPG" height=341 width="auto" class="sky">
-       	<img src="IMG_1886.JPG" height="auto" width=400 class="horse">
+	  	
+
     
-       	<img src="IMG_3051.jpg" height ="auto" width=400 class="salsa">
-       	<img src="IMG_3260.jpg" height=300 width=auto class = "surf">
-		<p class="description">
-			<br>
-			Maribel is a junior at Stanford University majoring in Computer Science with a minor in Education. She was raised in Albuquerque, New Mexico, where she discovered her passion for engineering. She sought out every opportunity that would allow her to explore different STEM fields. She completed four different internships at the University of New Mexico with concentrations in Chemical Engineering, Electrical Engineering, and Computer Science. She continues to impress by teaching people how to code, interning at a national lab, and successfully completing her class courses.
-			<br>
-			She is also very passionate about community service. She has completed hundreds of hours in community service including mentoring students, tutoring, helping her under-resourced high school provide more opportunities to students, and staying actively engaged in the Latinx community on Stanford's campus.
-			<br>
-			On her free time, she spends a lot of time teaching and dancing Salsa and Bachata as part of Salseros de Stanford, attending musical productions, and riding horses. 
-			<br>
-			Her yearning to learn and help others is astounding. She will have such a bright future.
-
-		</p>
-    </div>
-
-	<div class="vertical-menu">
-  		<a href="#top-page">Home</a>
-  		<a href="#about-me">About Me</a>
-  		<a href="#Resume1">Resume</a>
-  		<a href="#Projects">Projects</a>
-
-  		<a href="#Contact-Me">Contact Me</a>
-	</div>
-
+    <!--links to all my social media-->
 	<a class="facebook" title="follow me on facebook" href="https://www.facebook.com/maribel.cardiel"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a>
 	<a class="github" title="follow me on github" href="https://github.com/mcardiel1"><img alt="follow me on github" src='GitHub-Mark-32px.png'></a>
 	<a class="linkedin" title="follow me on linkedin" href="https://www.linkedin.com/in/maribel-c-15544084"><img alt="follow me on linkedin" src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png"></a>
+
+
+
+
+
+
 </body>
 
 
