@@ -81,11 +81,11 @@
       <!--slide show showing pictures about me-->
   	  <div class="w3-content w3-display-container">
       
-        <img class="mySlides w3-animate-fading" src="IMG_1156.JPG" >
-        <img class="mySlides w3-animate-fading" src="IMG_3023.JPG" >
-        <img class="mySlides w3-animate-fading" src="G0044924.JPG" >
-        <img class="mySlides w3-animate-fading" src="IMG_3051.jpg">
-        <img class="mySlides w3-animate-fading" src="IMG_3260.jpg">
+        <img class="mySlides w3-animate-right" src="IMG_1156.JPG" >
+        <img class="mySlides w3-animate-right" src="IMG_3023.JPG" >
+        <img class="mySlides w3-animate-right" src="G0044924.JPG" >
+        <img class="mySlides w3-animate-right" src="IMG_3051.jpg">
+        <img class="mySlides w3-animate-right" src="IMG_3260.jpg">
         <!--the small buttons at the bottom of the slide show-->
         <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:560px"  >
           <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
@@ -93,14 +93,16 @@
           <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
           <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
           <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>             
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>             
         </div>
       </div>
 
       <script>
       var slideIndex = 1;
+      var myIndex=0;
       showDivs(slideIndex);
+ 
+
 
       function plusDivs(n) {
       showDivs(slideIndex += n);
@@ -127,6 +129,22 @@
       x[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " w3-white";
       }
+      function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+          for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      dots[slideIndex-1].className += " w3-white";
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
       </script>
 
 
@@ -157,12 +175,15 @@
 
 	<div class="Projects" id="Projects">
 	  <h2>Projects</h2>
+
+	  	<img src="8th_grade_panel_4.jpg" class="Projects-Pictures">
 		<p class="Projects-Description"> In high school, Maribel noticed a lack of opportunity for more advanced education opportunities in her community. As a high achieving student, herself, she found ways to go above and beyond by taking additional college classes, internships, etc. However, she still wanted others to have more readily available opportunities. So she conducted over 20 interviews to obtain a better understanding of what AP/Honors teachers have to complete in order to ensure the success of their classes, students that have been exposed to more advanced opportunities to hear about the challenges and benefits of taking more advanced courses were, and student advocates to learn about the best ways to help support students that are looking for more opportunities. She took over three school wide surveys to see if there was student demand for AP classes. She wrote and presented a proposal for the introduction of three new AP classes at the school the following year. They were all aproved. She now continuously returns to campus to provide feedback, check up on the progress of the classes and encourage highly motiviated students to pursue a degree at competitive universities and seek out life changing opportunities.
-		<br><br>
+		</p>
+		<img src="IMG_1617.JPG" class="Projects-Pictures">
+		<p class="Projects-Description">
 		As Vice President of Hermanos de Stanford, a latinx service group at Stanford University, Maribel attempted to change the culture of the group that was very heirarical to be more inclusive to new members. She established a new program called Hermanitos that would allow incoming members to get to meet older members, engage in fun activities, and participate in community service. There were over 30 matches made between new and old members and they continue to interact with each other and provide support throughout their four years in college.
-		<br><br>
-		She has recently joined a group called Human Engineers that works on fabricating prostheses for patients with amputies. She will then go to the Phillipines to fit and teach nurses how to fit prostheses for patients who are unable to obtain sufficient medical care.
-	  </p>
+		</p>
+
 	</div>
     <!--line above Contact-Me-->
   	<div class="vertical_line_4"></div>
