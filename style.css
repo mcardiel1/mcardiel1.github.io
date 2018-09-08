@@ -78,13 +78,7 @@ body	{
 	bottom: 0; 
 }
 	
-.vertical_line_1	{
-  border-left: 5px dashed Navy;
-  position:absolute;
-  height:250px;
-  top:900px;
-  left:725px;
-} 
+
 .About-Me	{
 	position:absolute;
 	font-family: sans-serif;
@@ -132,13 +126,7 @@ body	{
 	opacity: 0.5;
 }
 
-.vertical_line_2	{
-  border-left: 5px dashed Navy;
-  position:absolute;
-  height:250px;
-  top:2450px;
-  left:725px;
-} 
+
 
 .Resume	{
 	position:absolute;
@@ -182,13 +170,7 @@ body	{
 }
 
 
-.vertical_line_3	{
-  border-left: 5px dashed Navy;
-  position:absolute;
-  height:250px;
-  top:2845px;
-  left:725px;
-} 
+
 
 .Projects	{
 	text-align: center;
@@ -214,13 +196,7 @@ body	{
 }
 
 
-.vertical_line_4	{
-  border-left: 5px dashed Navy;
-  position:absolute;
-  height:250px;
-  top:4910px;
-  left:725px;
-} 
+
 
 .Contact-Me	{
 	text-align: center;
@@ -249,16 +225,25 @@ body	{
 .github	{
 	position: absolute;
 	top:5600px;
-	left:700px;
+	left:550px;
 }
 .linkedin	{
 	position:absolute;
 	top: 5600px;
-	left:900px;
+	left:800px;
+}
+.site	{
+	position: absolute;
+	top:5700px;
+	left:600px;
+
 }
 
 .open_source_code	{
 	font-family: sans-serif;
+	position:absolute;
+	top:5714px;
+	left:820px;
 }
 
 
