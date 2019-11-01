@@ -1,0 +1,44 @@
+
+.ml12 {
+  top: 120px;
+  margin-left: 11%;
+  left: 30%;
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+  .vertical_menu {
+	text-align: center;
+	color: white;
+	position: fixed;
+	top:0px;
+	
+    width: 11%; /* Set a width if you like */
+    background-color: Navy;
+    opacity:0.7;
+    height:100%;
+}
+
+
+
+.vertical_menu a {
+    font-family: sans-serif;
+    color: white;
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    
+}
+
+.vertical_menu a:hover {
+    background-color: Navy;
+    opacity:0.5;
+}

@@ -1,32 +1,42 @@
 
 
-body	{
+body, html	{
 	
 	background-repeat: no-repeat;
-    height:5700px;
+    height:auto;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center right;
     background-image: url("Presentation1.jpg");
     background-color: Linen;
     
   }
 
+  .Container{
+    width: 100%;
+    height: auto;
+  }
   .vertical_menu {
 	text-align: center;
 	color: white;
 	position: fixed;
 	top:0px;
 	
-    width: 200px; /* Set a width if you like */
+    width: 11%; /* Set a width if you like */
     background-color: Navy;
     opacity:0.7;
-    height:800px;
+    height:100%;
 }
 
 
 
 .vertical_menu a {
-    font-family: sans-serif;
+
+	display: inline-block;
+	line-height: 2em;
+   /* font-family: sans-serif;
     color: white;
-    display: block; /* Make the links appear below each other */
+   /* display: block; /* Make the links appear below each other */
     padding: 12px; /* Add some padding */
     text-decoration: none; /* Remove underline from links */
     
@@ -42,7 +52,7 @@ body	{
   font-size: 80pt;
   color: Navy;
   position:absolute;
-  left:250px;
+  left:30%;
   top:400px;
   font-family: broadway;
 }
@@ -83,14 +93,14 @@ body	{
 	position:absolute;
 	font-family: sans-serif;
 	top:1150px;
-	left:170px;
+	left:9%;
 	text-align: center;
-	margin-right:100px;
-	margin-left:100px;
+	/*margin-right:11%;*/
+	margin-left:11%;
 	border: 5px dashed Navy;
 	padding: 10px;
 	height:1300px;
-	width:900px;
+	width:70%;
 }
 
 .About-Me-Description	{
@@ -119,8 +129,8 @@ body	{
 .rectangle_1	{
 	position: absolute;
 	top: 700px;
-	left:0px;
-	width: 1263px;
+	left:160px;
+	width: 100%;
 	height: 20px;
 	background-color: black;
 	opacity: 0.5;
@@ -132,10 +142,11 @@ body	{
 	position:absolute;
 	font-family: lucida calligraphy;
 	top:2695px;
-	left:270px;
+	left:8%;
+	margin-left: 11%;
 	text-align: center;
 	border: 5px dashed Navy;
-	width:920px;
+	width:70%;
 	height:150px;
 }
 .resumeButton	{
@@ -177,9 +188,10 @@ body	{
 	position: absolute;
 	font-family: lucida calligraphy;
 	top:3090px;
-	left:270px;
+	left:8%;
+	margin-left: 11%;
 	border: 5px dashed Navy;
-	width: 900px;
+	width: 70%;
 	height:1820px;
 	padding:10px;
 }
@@ -203,9 +215,10 @@ body	{
 	position: absolute;
 	font-family: lucida calligraphy;
 	top:5157px;
-	left:270px;
+	left:8%;
+	margin-left: 11%;
 	border:5px dashed Navy;
-	width:900px;
+	width:70%;
 	height:300px;
 	padding:10px;
 }

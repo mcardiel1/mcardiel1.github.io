@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--links that are relavent-->
+  <link rel="stylesheet" href="style_engineering_projects.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>var ml = { timelines: {}};</script>
+
+  <title>Maribel Cardiel</title>
+</head>
+
+<body>
+	<h1 class="ml12">Engineering Projects</h1>
+
+
+<div class="vertical_menu">
+        <a href="index.html">About Me</a>
+      
+      <a href="index_engineering_projects.html">Engineering Projects</a>
+      <a href="index_photography_projects.html">Photography Projects</a>
+      <a href="index_resume.html">Resume</a>
+      <a href="#Contact-Me">Contact Me</a>
+</div>
+<script type="text/javascript">
+	// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+ </script>
+
+ <div class="Projects" id="Projects">
+   <div class = "Mechatronics">
+    <h2>Mechatronics Project</h2>
+
+      <img src="launcher.jpg" class="launcher_pic">
+      <img src="cad.png" class="cad_pic">
+      <img src="circuit.jpg" class="circuit_pic">
+    <p class="Mechatronics_description"> At Stanford University, Maribel worked on a team of four people to design and build a robot that  maneuvers through an arena to a loading pad where the robot was loaded with balls and then locates a target to launch the balls at until the target is take down. 
+    </p>
+  </div>
+  <div class="human_engineers">
+    <h2>Human Engineers</h2>
+    <img src="IMG_3575.jpg" class="human_engineers_pic">
+    <p class="human_engineers_description">
+    Maribel went on a medical mission to the philippines to build prosthetic legs for amputee patients. She mostly reused material from hospital donations to build and fit sockets for patients.
+    </p>
+  </div>
+  </div>
+
+</body>
+
+
+</html>
