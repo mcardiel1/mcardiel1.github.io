@@ -5,8 +5,9 @@ body, html	{
 	background-repeat: no-repeat;
     height:auto;
     width: 100%;
+    background-size: 100% auto;
     background-attachment: fixed;
-    background-position: center right;
+    /*background-position: center right;*/
     background-image: url("Presentation1.jpg");
     background-color: Linen;
     
@@ -34,6 +35,7 @@ body, html	{
 
 	display: inline-block;
 	line-height: 2em;
+	font-size: 1.25vw; 
    /* font-family: sans-serif;
     color: white;
    /* display: block; /* Make the links appear below each other */
@@ -49,17 +51,18 @@ body, html	{
 
 .ml1 {
   font-weight: 900;
-  font-size: 80pt;
+  font-size: 6vw;
   color: Navy;
   position:absolute;
-  left:30%;
-  top:400px;
+  margin-left: 11%;
+  left:20%;
+  top:60%;
   font-family: broadway;
 }
 
 .ml1 .letter {
   display: inline-block;
-  line-height: 1em;
+  line-height: 50%;
 
 }
 
@@ -75,7 +78,7 @@ body, html	{
   opacity: 0;
   position: absolute;
   left: 0;
-  height: 3px;
+  height: 5%;
   width: 100%;
   background-color: #fff;
   transform-origin: 0 0;
@@ -128,8 +131,8 @@ body, html	{
 
 .rectangle_1	{
 	position: absolute;
-	top: 700px;
-	left:160px;
+	top: 100%;
+	left:11%;
 	width: 100%;
 	height: 20px;
 	background-color: black;
