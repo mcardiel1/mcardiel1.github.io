@@ -10,3 +10,46 @@
   display: inline-block;
   line-height: 1em;
 }
+
+
+.Resume	{
+	position:absolute;
+
+	top:2695px;
+	left:8%;
+	margin-left: 11%;
+	text-align: center;
+	
+	width:70%;
+	height:150px;
+}
+.resumeButton	{
+
+
+	
+	
+	background-color:Navy;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color: white;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.resumeButton:hover {
+    background-color: Navy;
+    opacity: 0.7;
+
+	
+}
+.resumeButton:active	{
+	position:relative;
+	top:1px;
+}
