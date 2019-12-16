@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--links that are relavent-->
+  <link rel="stylesheet" href="car_style.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>var ml = { timelines: {}};</script>
+
+  <title>Maribel Cardiel</title>
+</head>
+
+<body>
+
+
+
+    <div class = "Container">
+      <!--Menu Bar at the side of the page-->
+     <div class="vertical_menu">
+      <a href="index.html">About Me</a>
+      
+      <a href="index_engineering_projects.html">Engineering Projects</a>
+      <a href="index_photography_projects.html">Photography Projects</a>
+      <a href="index_resume.html">Resume</a>
+      <a href="#Contact-Me">Contact Me</a>
+      
+    </div>
+	<h1 class="ml12">Gentrification</h1>
+
+<script type="text/javascript">
+	// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+ </script>
+</div>
+
+  <div class="topnav">
+    <a href="index_photography_projects.html">All Projects</a>
+    <a class="active" href="car_index.html">Gentrification</a>
+    <a href="horse_index.html">From the Barn</a>
+    <a href="salsa_index.html">Salsa on 1</a>
+    <a href="reynis_index.html">Dia de Los Muertos</a>
+    <a href="plant_index.html">Beauty in Nature</a>
+    <a href="flea_index.html">Flea Market</a>
+    <a href="mixture_index.html">The Mixture</a>
+  </div>
+
+
+<a class="trigger_popup_fricc">Description</a>
+
+<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">X</div>
+        <p>Gentrification<br />blah blah blah</p>
+    </div>
+</div>
+
+<script>
+  
+$(window).load(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+});
+
+</script>
+
+
+
+<div class="w3-content">
+  <img class="mySlides" src="front_of_car.jpg" style = "display:none">
+  <img class="mySlides" src="bus stop.jpg" style="display:none">
+  <img class="mySlides" src="grass_.jpg" style="display:none">
+  <img class="mySlides" src="city background.jpg" style="display:none">
+  <div class = "row">
+    <div class = "column">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="front_of_car.jpg" style="width:75%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class = "column">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="bus stop.jpg" style="width:75%;cursor:pointer" onclick="currentDiv(2)">
+   </div>
+   <div class = "column">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="grass_.jpg" style="width:75%;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+    <div class = "column">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="city background.jpg" style="width:75%;cursor:pointer" onclick="currentDiv(4)">
+   </div>
+</div>
+</div>
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function plusDivs(n)  {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+<button class="w3-button w3-display-left" style=" left: 22%;top: 80%" style = "color: white" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" style = "right: 13%; top: 80%" onclick="plusDivs(+1)">&#10095;</button>
+
+
+  <div class= "Contact-Me" id="Contact-Me">
+    <h1 style = 'font-family: veronda'  style ='font-weight: bold' style= "text-decoration: underline" > <u>Contact Me </u></h1>
+    <h4 class="Contact-Info">Phone: (505) 452-7287</h4>
+    <h4 class="Contact-Info">Email: mcardiel@stanford.edu  &emsp;   maribel1cardiel@gmail.com</h4>
+  </div>
+      
+
+    
+    <!--links to all my social media-->
+  <a class="github" title="follow me on github" href="https://github.com/mcardiel1"><img alt="follow me on github" src='GitHub-Mark-32px.png'></a>
+  <a class="linkedin" title="follow me on linkedin" href="https://www.linkedin.com/in/maribel-c-15544084"><img alt="follow me on linkedin" src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png"></a>
+
+  <p class="site" > This site is open source at:</p>
+  <a href="https://github.com/mcardiel1/mcardiel1.github.io" class = 'open_source_code'>github.com/mcardiel1</a>
+
+
+</div>
+
+</body>
+
+
+</html>
+

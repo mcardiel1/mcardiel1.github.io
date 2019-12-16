@@ -99,11 +99,12 @@ body, html	{
 }
 	
 
+
 .About-Me	{
 	position:absolute;
 	
 	font-size: 5vw;
-	top:130%;
+	top:250%;
 	left: 4%;
 	text-align: center;
 	/*margin-right:11%;*/
@@ -119,7 +120,7 @@ body, html	{
 
 .slide_show	{
 	position : absolute;
-	top: 150%;
+	top: 130%;
 	left: 11%;
 	margin-left: 11%;
 	
@@ -127,7 +128,7 @@ body, html	{
 }
 .About-Me-Description	{
 	position: absolute;
-	top:65%;
+	top:3%;
     font-family: veronda;
     font-size: 1.75vw;
 
