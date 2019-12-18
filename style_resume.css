@@ -59,20 +59,22 @@ body, html  {
 
 .Resume	{
 	position:absolute;
-
-	top:2695px;
-	left:8%;
+	font-family: veronda;
+	font-size: 1.5vw;
+	top:25%;
+	left:5%;
 	margin-left: 11%;
-	text-align: center;
+	text-align: left;
 	
-	width:70%;
-	height:150px;
+	width:80%;
+	
 }
 .resumeButton	{
 
 
 	
-	
+	margin-top: 10%;
+	margin-left: 74%;
 	background-color:Navy;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -96,7 +98,7 @@ body, html  {
 }
 .resumeButton:active	{
 	position:relative;
-	top:1px;
+	top:400%;
 }
 
 

@@ -61,7 +61,7 @@ body, html  {
   background-color: #333;
   overflow: hidden;
   margin-top: 7%;
-  width: 76%;
+  width: 75.81%;
   margin-left: 17%;
 }
 
@@ -434,7 +434,7 @@ body, html  {
   position: absolute;
   font-family: veronda;
   font-size: 1.75vw;
-  top:295%;
+  top:325%;
   left:8%;
   margin-left: 11%;
   width:70%;
@@ -454,22 +454,22 @@ body, html  {
 
 .facebook {
   position:absolute;
-  top:325%;
+  top:355%;
   left:30%;
 }
 .github {
   position: absolute;
-  top:325%;
+  top:355%;
   left:35%;
 }
 .linkedin {
   position:absolute;
-  top: 325%;
+  top: 355%;
   left:70%;
 }
 .site {
   position: absolute;
-  top:335%;
+  top:365%;
   left:40%;
   opacity:0.75;
   font-family: veronda;
@@ -483,7 +483,7 @@ body, html  {
   font-size: 1.25vw;
 
   position:absolute;
-  top:337.5%;
+  top:367.5%;
   left:55%;
 }
 

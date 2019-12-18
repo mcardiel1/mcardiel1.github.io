@@ -30,8 +30,8 @@ body, html	{
   background-color: #333;
   overflow: hidden;
   margin-top: 7%;
-  width: 51.5%;
-  margin-left: 30%;
+  width: 47.95%;
+  margin-left: 32%;
 }
 
 /* Style the links inside the navigation bar */
@@ -385,17 +385,17 @@ body, html	{
 }
 .github {
   position: absolute;
-  top:170%;
+  top:180%;
   left:35%;
 }
 .linkedin {
   position:absolute;
-  top: 170%;
+  top: 180%;
   left:70%;
 }
 .site {
   position: absolute;
-  top:180%;
+  top:190%;
   left:40%;
   opacity:0.75;
   font-family: veronda;
@@ -409,7 +409,7 @@ body, html	{
   font-size: 1.25vw;
 
   position:absolute;
-  top:182.5%;
+  top:192.5%;
   left:55%;
 }
 

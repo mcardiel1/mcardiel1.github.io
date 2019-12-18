@@ -29,7 +29,7 @@ body, html  {
   background-color: #333;
   overflow: hidden;
   margin-top: 7%;
-  width: 76%;
+  width: 75.81%;
   margin-left: 17%;
 }
 
@@ -209,17 +209,17 @@ body, html  {
 }
 .github {
   position: absolute;
-  top:195%;
+  top:205%;
   left:35%;
 }
 .linkedin {
   position:absolute;
-  top: 195%;
+  top: 205%;
   left:70%;
 }
 .site {
   position: absolute;
-  top:205%;
+  top:215%;
   left:40%;
   opacity:0.75;
   font-family: veronda;
@@ -233,6 +233,6 @@ body, html  {
   font-size: 1.25vw;
 
   position:absolute;
-  top:207.5%;
+  top:217.5%;
   left:55%;
 }
