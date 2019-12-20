@@ -158,14 +158,21 @@ body, html  {
   padding-left: -20px;
 }
 
-.mySlides {
-
-  margin-left: 10%;
-  right: 5%;
-  
-  width: 94%;
+.slide_and_button  {
+  position: relative;
 
 }
+
+.mySlides {
+
+ 
+  left: 22.8%; 
+  position:relative;
+  width: 64%;
+ 
+
+}
+
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
@@ -177,6 +184,8 @@ body, html  {
 
 
 .row {
+  position: absolute;
+  top: 110%;
   display: flex;
   padding-left: 16%;
 
@@ -190,6 +199,7 @@ body, html  {
   left:8%;
   margin-left: 11%;
   width:70%;
+  margin-top: 15%;
   /*height:300px;*/
   padding:10px;
   opacity:0.75;

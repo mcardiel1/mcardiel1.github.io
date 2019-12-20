@@ -164,10 +164,11 @@ body, html  {
 
 .mySlides {
 
-  margin-left: 10%;
-  right: 5%;
  
-  width: 94%;
+  left: 22.8%; 
+  position:relative;
+  width: 64%;
+ 
 
 }
 
@@ -181,6 +182,8 @@ body, html  {
 
 
 .row {
+  position: absolute;
+  top: 135%;
   display: flex;
   padding-left: 16%;
 
@@ -194,7 +197,7 @@ body, html  {
   left:8%;
   margin-left: 11%;
   width:70%;
-  /*height:300px;*/
+  margin-top: 15%;
   padding:10px;
   opacity:0.75;
 }
