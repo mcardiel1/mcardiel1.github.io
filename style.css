@@ -14,8 +14,8 @@ body, html	{
 
   .my_image	{
 
-  	height: 105%;
-  	position: absolute;
+  	height: 100%;
+  	position: relative;
   	top:0%;
   	width: 100%;
 
@@ -62,8 +62,9 @@ body, html	{
   position:absolute;
   margin-left: 11%;
   left:23%;
-  top:60%;
+  top:17%;
   font-family: broadway;
+
 }
 
 .ml1 .letter {
@@ -99,16 +100,21 @@ body, html	{
 }
 	
 
+.slide_and	{
 
+}
 
-
+.all	{
+	position: relative;
+}
 
 .slide_show	{
-	position : absolute;
-	top: 130%;
-	left: 11%;
-	margin-left: 11%;
-	margin-right: 11%;
+	position : relative;
+	
+	margin-left: 22%;
+	
+	width: 65%;
+	margin-top: 10%;
 	
 
 }
@@ -118,8 +124,7 @@ body, html	{
 	position:relative;
 	
 	
-	top:250%;
-	left: 4%;
+	
 	text-align: center;
 	/*margin-right:11%;*/
 	margin-left:11%;
@@ -136,14 +141,15 @@ font-family: verdona;
 font-weight: bold;
 text-decoration: underline;
 font-size: 3vw;
+margin-left:5%;
 }
 
 .About-Me-Description	{
 	position: relative;
-	top:10%;
+	
     font-family: veronda;
     font-size: 1.75vw;
-
+    left:5%;
 }
 
 .w3-left, .w3-right, .w3-badge {
@@ -154,16 +160,16 @@ font-size: 3vw;
 .w3-badge {
 	
 	
-	height: 12%;
+	height: 12px;
 
 }
 
 
 .rectangle_1	{
 	position: absolute;
-	top: 100%;
+	
 	width: 100%;
-	height: 5%;
+	height: 2%;
 	background-color: black;
 	opacity: 0.5;
 }
@@ -174,16 +180,17 @@ font-size: 3vw;
 
 
 .Contact-Me	{
-	text-align: center;
-	position: relative;
-	font-family: veronda;
-	font-size: 1.75vw;
-	top:375%;
-	left:8%;
-	margin-left: 11%;
-	width:70%;
-	
-	opacity:0.75;
+	 text-align: center;
+  position: relative;
+  font-family: veronda;
+  font-size: 2vw;
+  top:170%;
+  left:8%;
+  margin-left: 11%;
+  width:70%;
+  margin-top: 15%;
+  padding:10px;
+  opacity:0.75;
 }
 
 .Contact-Info	{
@@ -195,20 +202,25 @@ font-size: 3vw;
 
 
 
-.facebook	{
-	position:relative;
-	top:410%;
-	left:30%;
+.cont_img_1 	{
+	width: 5%;
+	
+}
+.cont_img_2 	{
+	width: 15%;
+	
 }
 .github	{
 	position: relative;
 	top:410%;
 	left:35%;
+	
 }
 .linkedin	{
 	position:relative;
 	top: 410%;
-	left:70%;
+	left:55%;
+	
 }
 .site	{
 	position: relative;
@@ -225,8 +237,8 @@ font-size: 3vw;
 	font-family: veronda;
 	font-size: 1.25vw;
 
-	position:relative;
-	top:422.5%;
+	position:absolute;
+	top:99%;
 	left:55%;
 }
 

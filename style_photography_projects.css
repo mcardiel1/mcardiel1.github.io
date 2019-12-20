@@ -429,16 +429,20 @@ body, html  {
   }
  
 
+.all{
+  position: relative;
+}
+
 .Contact-Me {
-  text-align: center;
+   text-align: center;
   position: relative;
   font-family: veronda;
-  font-size: 1.75vw;
-  top:325%;
-  left:8%;
+  font-size: 2vw;
+  top:170%;
+  left: 8%;
   margin-left: 11%;
   width:70%;
-  /*height:300px;*/
+  margin-top: 5%;
   padding:10px;
   opacity:0.75;
 }
@@ -452,24 +456,30 @@ body, html  {
 
 
 
-.facebook {
-  position:relative;
-  top:355%;
-  left:30%;
+
+.cont_img_1   {
+  width: 5%;
+  
+}
+.cont_img_2   {
+  width: 15%;
+  
 }
 .github {
   position: relative;
-  top:355%;
+  top:410%;
   left:35%;
+  
 }
 .linkedin {
   position:relative;
-  top: 355%;
-  left:70%;
+  top: 410%;
+  left:55%;
+  
 }
 .site {
   position: relative;
-  top:365%;
+  top:420%;
   left:40%;
   opacity:0.75;
   font-family: veronda;
@@ -482,13 +492,7 @@ body, html  {
   font-family: veronda;
   font-size: 1.25vw;
 
-  position:relative;
-  top:367.5%;
+  position:absolute;
+  top:92%;
   left:55%;
 }
-
-
-
-
-
-
