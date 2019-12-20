@@ -10,12 +10,12 @@ body, html	{
 
 .ml12 {
   font-weight: 200;
-  font-size: 2.5em;
+  font-size: 2.7vw;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   margin-left: 11%;
   position: absolute;
-  left: 27%;
+  left: 25%;
   top: 0%;
   color: Navy;
 }
@@ -38,9 +38,9 @@ body, html	{
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 10px;
+  padding: 2% 1.45%;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.18vw;
 }
 
 /* Change the color of links on hover */
@@ -93,7 +93,7 @@ body, html	{
 	line-height: 2em;
 	font-size: 1.25vw; 
 
-    padding: 12px; /* Add some padding */
+    padding: 11%; /* Add some padding */
     text-decoration: none; /* Remove underline from links */
 
     
@@ -108,28 +108,20 @@ body, html	{
 
 
 .Mechatronics	{
-	text-align: center;
-	position: absolute;
-	top:90%;
-	font-size: 5vw;	
-	left: 11%;
-	text-align: center;
-	width:80%;
-	opacity:0.75;	
+	  text-align: center;
+  position: relative;
+  top:100%;
+  font-size: 1.75vw; 
+  left: 15%;
+  text-align: center;
+  width:80%;
+  opacity:0.75;
 }
 
 
-
-.Mechatronics_description	{
-
-	font-size: 1.75vw;
-	position: absolute;
-	left:7%;
-	
-}
 
 .link {
-  position:absolute;
+  position:relative;
 
   top:150%;
   left:8%;
@@ -137,26 +129,23 @@ body, html	{
   text-align: center;
   
   width:70%;
-  height:150px;
+  
 }
 .linkButton {
 
-
-  
-  
   background-color:Navy;
   
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-  border-radius:5px;
-  border:1px solid #337bc4;
+  -moz-border-radius:1%;
+  -webkit-border-radius:1%;
+  border-radius:1%;
+  border:1% solid #337bc4;
   display:inline-block;
   cursor:pointer;
   color: white;
-  font-family:Arial;
-  font-size:17px;
+  font-family:veranda;
+  font-size:1.5vw;
   font-weight:bold;
-  padding:12px 44px;
+  padding:2% 4%;
   text-decoration:none;
   text-shadow:0px 1px 0px #528ecc;
 }
@@ -176,9 +165,9 @@ body, html	{
 
 .Contact-Me {
   text-align: center;
-  position: absolute;
+  position: relative;
   font-family: veronda;
-  font-size: 1.75vw;
+  font-size: 2vw;
   top:175%;
   left:8%;
   margin-left: 11%;
@@ -198,23 +187,23 @@ body, html	{
 
 
 .facebook {
-  position:absolute;
+  position:relative;
   top:205%;
   left:30%;
 }
 .github {
-  position: absolute;
+  position: relative;
   top:205%;
   left:35%;
 }
 .linkedin {
-  position:absolute;
+  position:relative;
   top: 205%;
   left:70%;
 }
 .site {
-  position: absolute;
-  top:215%;
+  position: relative;
+  top:;
   left:40%;
   opacity:0.75;
   font-family: veronda;
@@ -227,8 +216,8 @@ body, html	{
   font-family: veronda;
   font-size: 1.25vw;
 
-  position:absolute;
-  top:217.5%;
+  position:relative;
+  top:0%;
   left:55%;
 }
 
