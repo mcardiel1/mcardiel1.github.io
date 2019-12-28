@@ -193,65 +193,63 @@ body, html  {
 }
 
 .Contact-Me {
-   text-align: center;
+  text-align: center;
   position: relative;
   font-family: veronda;
-  font-size: 2vw;
+  font-size: 2.1vw;
   top:170%;
-  left: 8%;
+  left:8%;
   margin-left: 11%;
   width:70%;
   margin-top: 15%;
-  padding:10px;
-  opacity:0.75;
+ 
+  
 }
 
-.Contact-Info {
-  font-family: veronda;
-  font-size: 1.75vw;
-  opacity:0.75;
-}
 
 
 
 
 
 .cont_img_1   {
-  width: 5%;
+  width: 150%;
   
 }
 .cont_img_2   {
-  width: 15%;
+  width: 100%;
   
 }
 .github {
-  position: relative;
-  top:410%;
-  left:35%;
+  position: absolute;
+  top:110%;
+  left:40%;
   
 }
 .linkedin {
-  position:relative;
-  top: 410%;
-  left:55%;
+  position:absolute;
+  top: 110%;
+  left:60%;
   
 }
 .site {
-  position: relative;
-  top:420%;
+  position: absolute;
+  top:140%;
   left:40%;
   opacity:0.75;
   font-family: veronda;
-  font-size: 1.25vw;
+  font-size: 1.3vw;
+
+  
 
 }
 
 .open_source_code {
   opacity:0.75;
   font-family: veronda;
-  font-size: 1.25vw;
+  font-size: 1.3vw;
 
   position:absolute;
-  top:92%;
+  top:152%;
   left:55%;
 }
+

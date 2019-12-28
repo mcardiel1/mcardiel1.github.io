@@ -3,12 +3,13 @@
 body, html	{
 	
 	background-repeat: no-repeat;
-    height:auto;
+   height:100% auto;
     width: 100%;
     background-size: 100% auto;
     background-attachment: fixed;
  
     background-color: Linen;
+
     
   }
 
@@ -180,66 +181,64 @@ margin-left:5%;
 
 
 .Contact-Me	{
-	 text-align: center;
+  text-align: center;
   position: relative;
   font-family: veronda;
-  font-size: 2vw;
+  font-size: 2.1vw;
   top:170%;
   left:8%;
   margin-left: 11%;
   width:70%;
   margin-top: 15%;
-  padding:10px;
-  opacity:0.75;
+ 
+  
 }
 
-.Contact-Info	{
-	font-family: veronda;
-	font-size: 1.75vw;
-	opacity:0.75;
-}
+
 
 
 
 
 .cont_img_1 	{
-	width: 5%;
+	width: 150%;
 	
 }
 .cont_img_2 	{
-	width: 15%;
+	width: 100%;
 	
 }
 .github	{
-	position: relative;
-	top:410%;
+	position: absolute;
+	top:110%;
 	left:35%;
 	
 }
 .linkedin	{
-	position:relative;
-	top: 410%;
+	position:absolute;
+	top: 110%;
 	left:55%;
 	
 }
 .site	{
-	position: relative;
-	top:420%;
-	left:40%;
+	position: absolute;
+	top:140%;
+	left:31%;
 	opacity:0.75;
 	font-family: veronda;
-	font-size: 1.25vw;
+	font-size: 1.3vw;
+
+	
 
 }
 
 .open_source_code	{
 	opacity:0.75;
 	font-family: veronda;
-	font-size: 1.25vw;
+	font-size: 1.3vw;
 
 	position:absolute;
-	top:99%;
-	left:55%;
+	top:152%;
+	left:53%;
 }
 
 
