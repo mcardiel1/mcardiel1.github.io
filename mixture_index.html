@@ -60,13 +60,13 @@ anime.timeline({loop: true})
     <a class="active" href="mixture_index.html">The Mixture</a>
   </div>
 
-<a class="trigger_popup_fricc">Description</a>
+<a class="trigger_popup_fricc">View Description</a>
 
 <div class="hover_bkgr_fricc">
     <span class="helper"></span>
     <div>
         <div class="popupCloseButton">X</div>
-        <p><u>A Mixture</u><br />This is a mixture of images I have taken that have been essential images that have inspired me to continue photographing and telling my story.</p>
+        <p><u>A Mixture</u><br />This is a mixture of images I have taken that have inspired me to continue photographing and telling my story.</p>
     </div>
 </div>
 
@@ -76,9 +76,7 @@ $(window).load(function () {
     $(".trigger_popup_fricc").click(function(){
        $('.hover_bkgr_fricc').show();
     });
-    $('.hover_bkgr_fricc').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
+    
     $('.popupCloseButton').click(function(){
         $('.hover_bkgr_fricc').hide();
     });

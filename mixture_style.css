@@ -90,7 +90,7 @@ body, html  {
 
 .hover_bkgr_fricc{
     background:rgba(0,0,0,.4);
-    cursor:pointer;
+   
     display:none;
     height:100%;
     position:fixed;
@@ -139,11 +139,12 @@ body, html  {
 }
 .trigger_popup_fricc {
     cursor: pointer;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     margin-top: 5%;
     display: inline-block;
     font-weight: bold;
-    background-color: #333;
+    background-color: Navy;
+    opacity: .75;
     margin-left: 22.75%;
     color : Linen;
     padding: 1%;
